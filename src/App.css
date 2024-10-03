@@ -1,0 +1,147 @@
+.header-section {
+  background-color: #8b9a71;
+  width: 100%;
+  height: 550px;
+}
+
+.header-title {
+  
+}
+
+.header-text {
+  margin: 20px;
+  background-color: #ced2ba;
+  padding: 20px;
+  text-align:justify;
+  word-break:keep-all;
+}
+
+.live-project-section {
+  margin-top: 18px;
+}
+
+
+.card {
+  display: inline-block;
+  width: 400px;
+  margin: 40px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-heading {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-text {
+  text-align:justify;
+  word-break:keep-all;
+  padding: 25px;
+}
+
+.card-view:hover {
+  color: #8b9a71;
+}
+
+@media screen and (max-width: 1069px) {
+  .live-project-section {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .live-project-section {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  .live-project-section {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .live-project-section {
+    margin-top: 100px;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 746px) {
+  .live-project-section {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .live-project-section {
+    margin-top: 140px;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .live-project-section {
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .live-project-section {
+    margin-top: 210px;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  .live-project-section {
+    margin-top: 240px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .live-project-section {
+    margin-top: 290px;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .live-project-section {
+    margin-top: 330px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .live-project-section {
+    margin-top: 360px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .live-project-section {
+    margin-top: 380px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .live-project-section {
+    margin-top: 400px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .live-project-section {
+    margin-top: 500px;
+  }
+}
+
