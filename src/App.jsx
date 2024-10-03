@@ -3,7 +3,6 @@ import { FaLinkedin } from "react-icons/fa";
 import TBMLogo from './assets/images/logo-image.jpg';
 import ToDoListImage from './assets/images/to-do-list.jpg';
 import ImageGalleryImage from './assets/images/image-gallery.png';
-import Card from './components/Card/card';
 
 function App() { 
 
