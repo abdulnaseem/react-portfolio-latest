@@ -1,0 +1,21 @@
+.about-title {
+    padding-top: 30px;
+    padding-left: 60px;
+}
+.about-list {
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.about-list {
+    list-style-type: circle;
+}
+
+.aws {
+    text-decoration: underline;
+}
+
+.aws:hover {
+    color: blue;
+}
