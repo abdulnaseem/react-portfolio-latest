@@ -1,9 +1,7 @@
+import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
-
 import './footer.css';
-import { useState } from "react";
-
 
 const Footer = ({footer}) => {
 
