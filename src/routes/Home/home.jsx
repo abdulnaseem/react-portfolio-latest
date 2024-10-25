@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import TBMLogo from '../../assets/images/tbm.jpeg';
 import ToDoListImage from '../../assets/images/tdl.jpeg';
 import ImageGalleryImage from '../../assets/images/ig.jpeg';
+import TN from '../../assets/images/talibnotes.jpeg';
 import Card from '../../components/Card/card';
 import Footer from '../../components/Footer/footer';
 
@@ -11,7 +12,17 @@ const Home = () => {
 
     let projectData = [
         {
-          id: 0,
+            id: 0,
+            cName: "live",
+            image: TN,
+            title: "Talib Notes",
+            text: `Working on improving UI/UX and creating a seamless design as well as refactoring code to make it reusable (dynamic components). Qur'an note taking application for students. I am working as lead frontend developer alongside a backend developer whose focusing on Node.<br/><br/>
+                  <strong>Tech Stack:</strong> React | CSS | Tailwindcss`,
+            link: "https://mhuss03.github.io/student-notes/",
+            linkText: "View"
+        },
+        {
+          id: 1,
           cName: "live",
           image: TBMLogo,
           title: "The Butterfly Movement - Health",
@@ -21,7 +32,7 @@ const Home = () => {
           linkText: "View"
         },
         {
-          id: 1,
+          id: 2,
           cName: "not-live",
           image: ToDoListImage,
           title: "To Do List",
@@ -31,7 +42,7 @@ const Home = () => {
           linkText: "GitHub"
         },
         {
-          id: 2,
+          id: 3,
           cName: "not-live",
           image: ImageGalleryImage,
           title: "Image Gallery",
