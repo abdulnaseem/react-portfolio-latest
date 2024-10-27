@@ -1,5 +1,6 @@
+import { Link, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './home.css'
-import { FaLinkedin } from "react-icons/fa";
 import TBMLogo from '../../assets/images/tbm.jpeg';
 import ToDoListImage from '../../assets/images/tdl.jpeg';
 import ImageGalleryImage from '../../assets/images/ig.jpeg';
@@ -9,6 +10,8 @@ import Footer from '../../components/Footer/footer';
 
 
 const Home = () => {
+
+    const navigate = useNavigate();
 
     let projectData = [
         {
@@ -53,16 +56,29 @@ const Home = () => {
         },
     ];
 
+    const handleNavigate = () => {
+        navigate('/contact');
+    }
+
     return (
         <>
             <div className='header-section'>
                 <h1 className="header-title text-6xl font-bold tracking-tight text-white sm:text-6xl drop-shadow-md">Abdul Naseem Khan</h1>
+                <h3 className="header-subheading text-2xl font-bold tracking-tight text-white sm:text-2xl drop-shadow-md">Bringing Ideas to Life through Code</h3>
 
                 <div className='header-text-section'>
                     <p className='header-text tracking-tight text-xl sm:text-xl drop-shadow-md'>
-                        I am Abdul, a Software Engineer who has experience working as a Full Stack Developer specialising in Angular 11 for Frontend, Java Spring Boot 
-                        for backend, Jenkins & Git for CI/CD. I have honed my skills to transition and adapt to become a Frontend Developer focusing on <strong>React.</strong>
+                        I am Abdul, a passionate and dedicated React developer, focused on turning creative ideas 
+                        into functional, user-friendly web experiences. Whether you’re looking to build sleek, scalable applications 
+                        or elevate your existing digital product, I’m here to make it happen.
                     </p>
+                    <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ type: 'spring', stiffness: 500 }}
+                        className='get-in-touch bg-white p-3 ps-5 pe-5 text-sm'
+                        onClick={handleNavigate}>
+                        Get in touch
+                    </motion.button>
                 </div>
             </div>
 

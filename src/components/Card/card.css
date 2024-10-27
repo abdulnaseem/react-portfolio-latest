@@ -1,12 +1,14 @@
 .card {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .card-item {
     /* flex: 1; */
     text-align: center;
     width: 390px;
-    margin: 40px;
+    margin: 30px;
     margin-bottom: 50px;
     padding-bottom: 20px;
     border-radius: 10px;

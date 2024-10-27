@@ -1,7 +1,7 @@
 .header-section {
-    background-color: #222222;
+    background-color: #020418;
     width: 100%;
-    height: 40vh;
+    height: 60vh;
 }
 
 .header-title {
@@ -10,14 +10,24 @@
     padding-right: 80px;
 }
 
+.header-subheading {
+    padding-top: 40px;
+    padding-left: 80px;
+    
+}
+
 .header-text {
     color: white;
-    margin: 20px;
-    padding: 20px;
-    padding-left: 60px;
+    padding-top: 10px;
+    padding-left: 80px;
     padding-right: 100px;
-    text-align:justify;
-    word-break:keep-all;
+}
+
+.get-in-touch {
+    border-radius: 200px;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-weight: 500;
 }
 
 .live-project-section {
@@ -28,26 +38,32 @@
 @media screen and (max-width: 769px) {
     .header-title {
         font-size: 38px!important;
-        text-align: center;
-        padding-top: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-top: 60px;
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
+    .header-subheading {
+        padding-top: 40px;
+        padding-left: 15px;   
     }
 
     .header-text {
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .get-in-touch {
+        margin-left: 15px;
     }
 }
 
 @media screen and (max-width: 769px) {
-    .header-section {
-        height: 50vh;
-    }
-
     .live-project-section {
         display: block;
         margin-top: 18px;
+    }
+
+    .header-title {
+        padding-top: 40px;
     }
 }

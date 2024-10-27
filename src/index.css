@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.inner {
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 30px;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.heading {
+	font-size: x-large;
+	font-weight: 700;
+}
+
+.sub-heading {
+	font-size: large;
+	font-weight: 600;
+}
+
 .hi-icon-wrap {
 	text-align: center;
 	margin: 0 auto;
@@ -78,7 +105,7 @@
 /* Effect 1a */
 .hi-icon-effect-1a .hi-icon:hover {
 	background: rgba(255,255,255,1);
-	color: #41ab6b;
+	color: #8f9eff;
 }
 
 .hi-icon-effect-1a .hi-icon:hover:after {
@@ -111,5 +138,25 @@
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@media screen and (max-width: 966px) {
+    .inner {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .flex {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 567px) {
+    .inner {
+		margin-left: 10px;
+        margin-right: 10px;
 	}
 }

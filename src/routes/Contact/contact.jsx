@@ -12,7 +12,7 @@ const Contact = () => {
     return (
         <>
             <div className="contact-container text-center">
-                <h2 className="contact-title text-4xl text-white font-bold tracking-tight sm:text-4xl drop-shadow-md">GET IN TOUCH</h2>
+                <h2 className="contact-title text-4xl font-bold tracking-tight sm:text-4xl drop-shadow-md">GET IN TOUCH</h2>
             </div>
 
             <div className="contact-outer-section">
