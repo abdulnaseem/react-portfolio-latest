@@ -11,11 +11,12 @@ const Card = ({data}) => {
                     data.map((data) => {
                         return <CardItem key={data.id} 
                                     cName={data.cName} 
-                                    image={data.image} 
+                                    image={data?.image} 
                                     title={data.title} 
                                     text={data.text} 
                                     link={data.link} 
-                                    linkText={data.linkText} />
+                                    linkText={data.linkText}
+                                    video={data?.video} />
                     })
                 }
             </div>

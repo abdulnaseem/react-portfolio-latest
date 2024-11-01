@@ -1,10 +1,17 @@
 import './card.css';
 
 
-const CardItem = ({ cName, image, title, text, link, linkText }) => {
+const CardItem = ({ cName, image, title, text, link, linkText, video }) => {
     return (
         <>
             <div className={`card-item ${cName} text-center`}>
+                {
+                    video && (
+                        <video controls width="400">
+                            <source src={video} type="video/webm" />
+                        </video>
+                    )
+                }
                 <img className='card-image' src={image} alt="" />
                 <h3 className='card-heading text-xl font-bold sm:text-xl'>{title}</h3>
                 <p className='card-text' dangerouslySetInnerHTML={{ __html: text }} />

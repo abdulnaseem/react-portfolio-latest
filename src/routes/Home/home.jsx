@@ -7,6 +7,7 @@ import ImageGalleryImage from '../../assets/images/ig.jpeg';
 import TN from '../../assets/images/talibnotes.jpeg';
 import Card from '../../components/Card/card';
 import Footer from '../../components/Footer/footer';
+import TNVideo from '../../assets/videos/talibnotes.webm';
 
 
 const Home = () => {
@@ -17,12 +18,12 @@ const Home = () => {
         {
             id: 0,
             cName: "live",
-            image: TN,
             title: "Talib Notes",
             text: `Working on improving UI/UX and creating a seamless design as well as refactoring code to make it reusable (dynamic components). Qur'an note taking application for students. I am working as lead frontend developer alongside a backend developer whose focusing on Node.<br/><br/>
                   <strong>Tech Stack:</strong> React | CSS | Tailwindcss`,
             link: "https://mhuss03.github.io/student-notes/",
-            linkText: "Coming soon"
+            linkText: "Coming soon",
+            video: TNVideo
         },
         {
           id: 1,
