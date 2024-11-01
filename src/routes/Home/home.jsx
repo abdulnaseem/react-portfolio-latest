@@ -22,7 +22,7 @@ const Home = () => {
             text: `Working on improving UI/UX and creating a seamless design as well as refactoring code to make it reusable (dynamic components). Qur'an note taking application for students. I am working as lead frontend developer alongside a backend developer whose focusing on Node.<br/><br/>
                   <strong>Tech Stack:</strong> React | CSS | Tailwindcss`,
             link: "https://mhuss03.github.io/student-notes/",
-            linkText: "View"
+            linkText: "Coming soon"
         },
         {
           id: 1,
