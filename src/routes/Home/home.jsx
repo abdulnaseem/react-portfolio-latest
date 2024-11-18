@@ -19,8 +19,8 @@ const Home = () => {
             id: 0,
             cName: "live",
             title: "Talib Notes",
-            text: `Working on improving UI/UX and creating a seamless design as well as refactoring code to make it reusable (dynamic components). Qur'an note taking application for students. I am working as lead frontend developer alongside a backend developer whose focusing on Node.<br/><br/>
-                  <strong>Tech Stack:</strong> React | CSS | Tailwindcss`,
+            text: `As the Lead Frontend Developer for this Qur'an note-taking application, I focus on enhancing UI/UX and developing dynamic, reusable components using React, Redux, HTML, CSS, and Tailwind CSS. I collaborate closely with a backend developer working on Node.js to ensure seamless integration and a high-quality user experience.</br></br>
+                  <strong>Tech Stack:</strong> React | Redux | CSS | Tailwindcss | Framer Motion`,
             link: "https://mhuss03.github.io/student-notes/",
             linkText: "Coming soon",
             video: TNVideo
