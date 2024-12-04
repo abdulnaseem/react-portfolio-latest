@@ -18,11 +18,11 @@ const Home = () => {
         {
             id: 0,
             cName: "live",
-            title: "Talib Notes",
+            title: "Talibnotes",
             text: `As the Lead Frontend Developer for this Qur'an note-taking application, I focus on enhancing UI/UX and developing dynamic, reusable components using React, Redux, HTML, CSS, and Tailwind CSS. I collaborate closely with a backend developer working on Node.js to ensure seamless integration and a high-quality user experience.</br></br>
-                  <strong>Tech Stack:</strong> React | Redux | CSS | Tailwindcss | Framer Motion`,
+                  <strong>Tech Stack:</strong> React | Redux | HTML | CSS | Tailwindcss | Framer Motion | Jest | React Testing Library`,
             link: "https://mhuss03.github.io/student-notes/",
-            linkText: "Coming soon",
+            linkText: "Read more",
             video: TNVideo
         },
         {
