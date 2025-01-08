@@ -6,12 +6,6 @@
         "id": 0
     },
     {
-        "title": "About",
-        "path": "/about",
-        "cName": "nav-text",
-        "id": 1
-    },
-    {
         "title": "Contact",
         "path": "/contact",
         "cName": "nav-text",

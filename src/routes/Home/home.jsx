@@ -69,8 +69,8 @@ const Home = () => {
 
                 <div className='header-text-section'>
                     <p className='header-text tracking-tight text-xl sm:text-xl drop-shadow-md'>
-                        I am Abdul, a passionate and dedicated React developer, focused on turning creative ideas 
-                        into functional, user-friendly web experiences. Whether you’re looking to build sleek, scalable applications 
+                        I am Abdul, a passionate and dedicated Software Developer, focused on turning creative ideas 
+                        into functional, user-friendly web and mobile experiences. Whether you’re looking to build sleek, scalable applications 
                         or elevate your existing digital product, I’m here to make it happen.
                     </p>
                     <motion.button

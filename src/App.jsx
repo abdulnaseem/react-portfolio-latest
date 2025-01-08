@@ -6,6 +6,7 @@ import About from './routes/About/about';
 import Contact from './routes/Contact/contact';
 import MainNavigation from './components/Navigation/mainNavigation';
 import TalibNotes from './components/talib-notes/TalibNotes';
+import ThankYou from './routes/Contact/ThankYou';
 
 
 function App() { 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/talibnotes' element={<TalibNotes />} />
+        <Route path='/thank-you' element={<ThankYou />} />
       </Routes>
     </>
   )
