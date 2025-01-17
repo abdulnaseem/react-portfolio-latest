@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
+import { FiExternalLink } from "react-icons/fi";
 import './card.css';
-
 
 const CardItem = ({ cName, image, title, text, link, linkText, video }) => {
 
@@ -8,7 +8,7 @@ const CardItem = ({ cName, image, title, text, link, linkText, video }) => {
 
     return (
         <>
-            <div className={`card-item ${cName} text-center`}>
+            <div className={`card-item ${cName} text-center relative`}>
                 {
                     video && (
                         <video controls width="400">
@@ -22,7 +22,19 @@ const CardItem = ({ cName, image, title, text, link, linkText, video }) => {
                 
                 {
                     linkText === "Read more" ? (
-                        <Link to={projectLink} className="card-view font-bold">{linkText}</Link>
+                        <div className="items-center">
+                            <Link to={projectLink} className="card-view font-bold">
+                                {linkText}
+                            </Link>
+                            <a
+                                className="absolute bottom-0 right-0 mb-5 mr-5 text-blue-600 transform transition-transform duration-300 hover:text-blue-700 hover:scale-125"
+                                href="https://beta.talibnotes.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FiExternalLink size={20} />
+                            </a>
+                        </div>
                     ) : (
                         <a className="card-view font-bold" href={link} target='_blank'>{linkText}</a>
                     )

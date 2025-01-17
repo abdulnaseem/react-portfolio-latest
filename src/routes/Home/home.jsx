@@ -8,6 +8,7 @@ import TN from '../../assets/images/talibnotes.jpeg';
 import Card from '../../components/Card/card';
 import Footer from '../../components/Footer/footer';
 import TNVideo from '../../assets/videos/talibnotes.webm';
+import ECS from '../../assets/images/ecommerce.jpeg';
 
 
 const Home = () => {
@@ -20,10 +21,23 @@ const Home = () => {
             cName: "live",
             title: "Talibnotes",
             text: `As the Lead Frontend Developer for this Qur'an note-taking application, I focus on enhancing UI/UX and developing dynamic, reusable components using React, Redux, HTML, CSS, and Tailwind CSS. I collaborate closely with a backend developer working on Node.js to ensure seamless integration and a high-quality user experience.</br></br>
-                  <strong>Tech Stack:</strong> React | Redux | HTML | CSS | Tailwindcss | Framer Motion | Jest | React Testing Library`,
+                  <strong>Tech Stack:</strong> React | JavaScript | Redux | HTML | CSS | Tailwindcss | Framer Motion | Jest | React Testing Library`,
             link: "https://mhuss03.github.io/student-notes/",
             linkText: "Read more",
             video: TNVideo
+        },
+        {
+            id: 0,
+            cName: "live",
+            image: ECS,
+            title: "E-Commerce Clothing Store",
+            text: `I built a responsive e-commerce store using React, TypeScript - for scalable and type-safe development, and Redux 
+                   for robust state management for features like cart operations, and product filtering. 
+                   With Tailwind CSS, I crafted a modern UI, and Framer Motion added smooth animations for an engaging user experience. 
+                   This project highlights my skills in front-end development and UI/UX design.</br></br>
+                  <strong>Tech Stack:</strong> React | TypeScript | Redux | Tailwindcss | Framer Motion | Vercel`,
+            link: "https://ecommerce-app-flax-nine.vercel.app/",
+            linkText: "View",
         },
         {
           id: 1,
