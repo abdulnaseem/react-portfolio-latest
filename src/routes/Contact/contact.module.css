@@ -1,93 +1,92 @@
-/* Basic Styling */
-.formContainer {
+.contactWrapper {
   max-width: 600px;
-  margin: 2rem auto;
-  background: #fff;
+  margin: 4rem auto;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #0f172a, #134e4a);
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+  color: #f0fdfa;
+  animation: fadeIn 1s ease-in-out;
 }
 
-h2 {
+.heading {
   text-align: center;
-  color: #333;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #5eead4, #38bdf8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .formGroup {
-  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .formGroup label {
-  display: block;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #a7f3d0;
+}
+
+.formGroup label span {
+  color: #f87171;
+  font-weight: bold;
 }
 
 .formGroup input,
 .formGroup textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
   font-size: 1rem;
+  background-color: #f0fdfa;
+  color: #0f172a;
+  transition: box-shadow 0.3s ease;
 }
 
 .formGroup input:focus,
 .formGroup textarea:focus {
-  outline: none;
-  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.6);
 }
 
 .submitButton {
-  display: block;
-  width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  background: linear-gradient(to right, #0ea5e9, #2dd4bf);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .submitButton:hover {
-  background: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(45, 212, 191, 0.4);
 }
 
 .submitButton:disabled {
-  background-color: #ccc;
+  background: #64748b;
   cursor: not-allowed;
 }
 
-.thankYouContainer {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.heading {
-  color: #2c3e50;
-}
-
-.message {
-  color: #7f8c8d;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-  .formContainer {
-    padding: 1.5rem;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
   }
-
-  input,
-  textarea {
-    font-size: 0.9rem;
-  }
-
-  .submitButton {
-    font-size: 0.9rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

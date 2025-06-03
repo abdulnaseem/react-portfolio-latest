@@ -1,0 +1,31 @@
+
+
+@media screen and (max-width: 767px) {
+    .circle {
+        margin-top: -300px!important;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    .circle {
+        margin-top: -230px!important;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .circle {
+        margin-top: -190px!important;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .circle {
+        margin-top: -160px!important;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .circle {
+        margin-top: -130px!important;
+    }
+}

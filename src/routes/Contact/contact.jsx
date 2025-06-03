@@ -8,7 +8,6 @@ const ContactForm = () => {
     email: '',
     message: '',
   });
-  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,11 +18,10 @@ const ContactForm = () => {
     e.preventDefault();
     const form = e.target;
 
-    // Dynamically set the `_next` field to use the current domain
     const nextUrlInput = document.createElement('input');
     nextUrlInput.type = 'hidden';
     nextUrlInput.name = '_next';
-    nextUrlInput.value = `${window.location.origin}/thank-you`; // Base URL + /thank-you
+    nextUrlInput.value = `${window.location.origin}/thank-you`;
     form.appendChild(nextUrlInput);
 
     form.action = "https://formsubmit.co/3c62f87ba55dcc02de3208b84fb356e0";
@@ -31,67 +29,71 @@ const ContactForm = () => {
     form.submit();
   };
 
-  const isFormValid = () => {
-    return Object.values(formData).some((value) => value.trim() !== '');
-  }
+  const isFormValid = () =>
+    Object.values(formData).some((value) => value.trim() !== '');
 
   return (
     <>
-      <div className="mt-8">
-        <h2 className='text-2xl font-bold'>Contact</h2>
+      <div className={styles.contactWrapper}>
+        <h2 className={styles.heading}>✨ Let's Build Something Amazing</h2>
+
         <form className={styles.formContainer} onSubmit={handleSubmit}>
-            {/* Name Input */}
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="http://localhost:5173/thank-you" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
 
-            <div className={styles.formGroup}>
-            <label htmlFor="name">Name <span className="text-red-600 font-bold">*</span></label>
+          {/* Name */}
+          <div className={styles.formGroup}>
+            <label htmlFor="name">Name <span>*</span></label>
             <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Enter your name"
-                required
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Jane Doe"
+              value={formData.name}
+              onChange={handleChange}
+              required
             />
-            </div>
+          </div>
 
-            {/* Email Input */}
-            <div className={styles.formGroup}>
-            <label htmlFor="email">Email <span className="text-red-600 font-bold">*</span></label>
+          {/* Email */}
+          <div className={styles.formGroup}>
+            <label htmlFor="email">Email <span>*</span></label>
             <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Enter your email"
-                required
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              value={formData.email}
+              onChange={handleChange}
+              required
             />
-            </div>
+          </div>
 
-            {/* Message Input */}
-            <div className={styles.formGroup}>
-            <label htmlFor="message">Message <span className="text-red-600 font-bold">*</span></label>
+          {/* Message */}
+          <div className={styles.formGroup}>
+            <label htmlFor="message">Message <span>*</span></label>
             <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Enter your message"
-                rows="5"
-                required
+              id="message"
+              name="message"
+              placeholder="What can I help you with?"
+              rows="5"
+              value={formData.message}
+              onChange={handleChange}
+              required
             />
-            </div>
+          </div>
 
-            {/* Submit Button */}
-            <button type="submit" className={styles.submitButton} disabled={!isFormValid()}>
-              Send Message
-            </button>
-        </form>      
+          {/* Submit */}
+          <button
+            type="submit"
+            className={styles.submitButton}
+            disabled={!isFormValid()}
+          >
+            🚀 Send Message
+          </button>
+        </form>
       </div>
+
       <Footer />
     </>
   );

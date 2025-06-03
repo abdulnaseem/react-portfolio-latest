@@ -105,7 +105,7 @@ body {
 /* Effect 1a */
 .hi-icon-effect-1a .hi-icon:hover {
 	background: rgba(255,255,255,1);
-	color: #8f9eff;
+	color: #009688;
 }
 
 .hi-icon-effect-1a .hi-icon:hover:after {

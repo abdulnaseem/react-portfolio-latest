@@ -6,7 +6,7 @@ import { Checkmark } from 'react-checkmark'
 const ThankYou = () => {
   return (
     <div className={classes.thankYouContainer}>
-      <h1 className={`${classes.heading} text-3xl font-bold mt-10 mb-5 text-center`}>
+      <h1 className={`text-gray-900 text-3xl font-bold mt-10 mb-5 text-center`}>
         Thank you for reaching out!
       </h1>
       <Checkmark size="96px" />
