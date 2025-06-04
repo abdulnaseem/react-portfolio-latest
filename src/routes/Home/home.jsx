@@ -7,6 +7,7 @@ import ToDoListImage from '../../assets/images/tdl.jpeg';
 import ImageGalleryImage from '../../assets/images/ig.jpeg';
 import TNVideo from '../../assets/videos/talibnotes.webm';
 import ECS from '../../assets/images/ecommerce.jpeg';
+import TM from '../../assets/images/task-m.jpeg';
 import {
   FaReact,
   FaHtml5,
@@ -24,6 +25,7 @@ import {
   SiVercel,
   SiTypescript
 } from 'react-icons/si';
+import { TbApi } from "react-icons/tb";
 import { MdDevices } from 'react-icons/md';
 import HeroSection from '../../components/hero/hero';
 
@@ -69,6 +71,25 @@ const Home = () => {
     },
     {
       id: 2,
+      cName: "live",
+      image: TM,
+      title: "Task Management",
+      text: `A simple clean UI/UX task management web application that enables users to add and delete a task, the user can also update the status of task completion.`,
+      link: "https://task-management-nine-taupe.vercel.app/",
+      linkText: "View",
+      icons: [
+        { icon: <FaReact className="text-teal-400" title="React" />, name: 'React' },
+        { icon: <SiJavascript className="text-yellow-400" title="JavaScript" />, name: 'JavaScript' },
+        { icon: <SiRedux className="text-purple-500" title="Redux" />, name: 'Redux' },
+        { icon: <SiTailwindcss className="text-teal-400" title="Tailwind CSS" />, name: 'Tailwind CSS' },
+        { icon: <SiJest className="text-red-500" title="Jest" />, name: 'Jest' },
+        { icon: <SiTestinglibrary className="text-gray-300" title="Testing Library" />, name: 'React Testing Library' },
+        { icon: <FaNodeJs className="text-green-600" title="Node.js" />, name: 'Node.js' },
+        { icon: <TbApi className="text-white" title="REST API" />, name: 'REST API' },
+      ]
+    },
+    {
+      id: 3,
       cName: "live",
       image: TBMLogo,
       title: "The Butterfly Movement - Health",
