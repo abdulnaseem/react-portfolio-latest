@@ -34,8 +34,8 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className={styles.contactWrapper}>
-        <h2 className={styles.heading}>✨ Let's Build Something Amazing</h2>
+      <div className={`${styles.contactWrapper} ms-2 me-2`}>
+        <h2 className={styles.heading}>Let's Build Something Amazing</h2>
 
         <form className={styles.formContainer} onSubmit={handleSubmit}>
           <input type="hidden" name="_captcha" value="false" />

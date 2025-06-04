@@ -23,10 +23,12 @@ import {
   SiJest,
   SiTestinglibrary,
   SiVercel,
-  SiTypescript
+  SiTypescript,
+  SiMongodb
 } from 'react-icons/si';
-import { TbApi } from "react-icons/tb";
+import { TbApi, TbFileTypeJsx } from "react-icons/tb";
 import { MdDevices } from 'react-icons/md';
+import { BsFiletypeJsx } from "react-icons/bs";
 import HeroSection from '../../components/hero/hero';
 
 const Home = () => {
@@ -45,7 +47,7 @@ const Home = () => {
         { icon: <FaReact className="text-teal-400" title="React" />, name: 'React' },
         { icon: <SiJavascript className="text-yellow-400" title="JavaScript" />, name: 'JavaScript' },
         { icon: <SiRedux className="text-purple-500" title="Redux" />, name: 'Redux' },
-        { icon: <FaHtml5 className="text-orange-500" title="HTML" />, name: 'HTML' },
+        { icon: <BsFiletypeJsx className="text-yellow-600" title="JSX" />, name: 'JSX' },
         { icon: <FaCss3Alt className="text-teal-300" title="CSS" />, name: 'CSS' },
         { icon: <SiTailwindcss className="text-teal-400" title="Tailwind CSS" />, name: 'Tailwind CSS' },
         { icon: <SiFramer className="text-pink-500" title="Framer Motion" />, name: 'Framer Motion' },
@@ -81,11 +83,13 @@ const Home = () => {
         { icon: <FaReact className="text-teal-400" title="React" />, name: 'React' },
         { icon: <SiJavascript className="text-yellow-400" title="JavaScript" />, name: 'JavaScript' },
         { icon: <SiRedux className="text-purple-500" title="Redux" />, name: 'Redux' },
+        { icon: <BsFiletypeJsx className="text-yellow-600" title="JSX" />, name: 'JSX' },
         { icon: <SiTailwindcss className="text-teal-400" title="Tailwind CSS" />, name: 'Tailwind CSS' },
         { icon: <SiJest className="text-red-500" title="Jest" />, name: 'Jest' },
         { icon: <SiTestinglibrary className="text-gray-300" title="Testing Library" />, name: 'React Testing Library' },
         { icon: <FaNodeJs className="text-green-600" title="Node.js" />, name: 'Node.js' },
         { icon: <TbApi className="text-white" title="REST API" />, name: 'REST API' },
+        { icon: <SiMongodb className="text-green-600" title="MongoDB" />, name: 'MongoDB' },
       ]
     },
     {
@@ -99,6 +103,7 @@ const Home = () => {
       icons: [
         { icon: <FaReact className="text-teal-400" title="React" />, name: 'React' },
         { icon: <SiJavascript className="text-yellow-400" title="JavaScript" />, name: 'JavaScript' },
+        { icon: <BsFiletypeJsx className="text-yellow-600" title="JSX" />, name: 'JSX' },
         { icon: <FaCss3Alt className="text-teal-300" title="CSS" />, name: 'CSS' },
         { icon: <SiTailwindcss className="text-teal-400" title="Tailwind CSS" />, name: 'Tailwind CSS' },
         { icon: <FaNodeJs className="text-green-600" title="Node.js" />, name: 'Node.js' },
