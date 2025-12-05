@@ -1,14 +1,9 @@
 [
-    {
-        "title": "Home",
-        "path": "/",
-        "cName": "nav-text",
-        "id": 0
-    },
-    {
-        "title": "Contact",
-        "path": "/contact",
-        "cName": "nav-text",
-        "id": 2
-    }
-]
+    { "id": 0, "title": "Home",     "type": "route", "path": "/",          "exact": true },
+    { "id": 1, "title": "Services", "type": "hash",  "hash": "services" },
+    { "id": 2, "title": "Projects", "type": "hash",  "hash": "projects" },
+    { "id": 3, "title": "Process",  "type": "hash",  "hash": "process" },
+    { "id": 4, "title": "Pricing",  "type": "hash",  "hash": "pricing" },
+    { "id": 5, "title": "Contact",  "type": "hash", "hash": "contact" }
+  ]
+  
