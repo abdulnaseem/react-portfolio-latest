@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 import { Badge } from "../../components/ui/badge";
 import { Input } from "../../components/ui/input";
 import { Textarea } from "../../components/ui/textarea";
-import CaseStudyDialog from "../../components/CaseStudy/casestudydialog";
+import CaseStudyDialog from "../../components/CaseStudy/CaseStudyDialog";
 import TalibnotesHome from "../../assets/images/talibnotes-home1.jpeg";
 import BBHome from "../../assets/images/bb-home2.jpeg";
   
@@ -42,7 +42,7 @@ const Home = () => {
     },
     {
       id: 2,
-      projectTitle: "The Butterfly Movement – Health",
+      projectTitle: "The Butterfly Movement - Health",
       shortDescription:
         "A public-facing website for a Shadwell-based community coach showcasing youth boxing and Brazilian Jiu-Jitsu programs. Built with React (plus a small Node layer) to present Coach H’s story, values, age-group sessions (5-10 & 11-17), and how to get involved.",
       impact: (
